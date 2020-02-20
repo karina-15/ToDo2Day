@@ -2,11 +2,11 @@ package edu.miracosta.cs134.kelias.todo2day.model;
 
 public class Task {
 
-    private int mId;
+    private long mId;   // use long for 64 unique primary key
     private String mDescription;
     private boolean mIsDone;
 
-    public Task(int mId, String mDescription, boolean mIsDone) {
+    public Task(long mId, String mDescription, boolean mIsDone) {
         this.mId = mId;
         this.mDescription = mDescription;
         this.mIsDone = mIsDone;
@@ -20,11 +20,11 @@ public class Task {
         this(-1, description, false);
     }
 
-    public int getId() {
+    public long getId() {
         return mId;
     }
 
-    public void setId(int mId) {
+    public void setId(long mId) {
         this.mId = mId;
     }
 
